@@ -1,5 +1,59 @@
 .App {
   height: 100vh; // Esto hace que .App tenga la altura de la ventana del navegador
   width: 100vw;
-  
 }
+@media (max-width: 600px) {
+  .contenidos {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.contenidos {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 15px;
+}
+
+.contenidos img {
+  width: 172px;
+  height: 33px;
+  margin-right: 10vw;
+  margin-left: 15vw;
+  border-radius: 4%; 
+  padding: 0.5em;
+  transition: transform 0.5s ease;
+}
+.contenidos img:hover {
+  transform: scale(1.1);
+}
+
+.contenidos h3 {
+  margin: 2.2vh 0vw;
+  color: #010618; /* Texto oscuro para contrastar con el fondo claro */
+  font-family: 'Georgia', serif; /* Fuente serif para un aspecto elegante */
+  font-size: 0.9em; /* Tamaño de fuente más grande */
+  line-height: 0.1;
+  padding: 0.5em;
+  transition: color 0.5s ease;
+}
+
+.contenidos h3:hover{
+  color: red;
+}
+
+@keyframes colorChange {
+  0% { background-color: chocolate; }
+  35% { background-color: rgb(240, 173, 4); }
+  70% { background-color: rgb(255, 228, 75); }
+  100% { background-color: chocolate; }
+}
+
+.imagen {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+  background-color: chocolate;
+  animation: colorChange 7s infinite;
+}
+
