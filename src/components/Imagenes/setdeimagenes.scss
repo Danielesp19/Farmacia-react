@@ -1,0 +1,30 @@
+.imagen img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+
+@keyframes colorChange {
+  
+  25% { background-color: rgb(254, 186, 15); } /* Amarillo oscuro */
+  50% { background-color: rgb(253, 156, 10); } /* Amarillo claro */
+  75% { background-color: rgb(255, 165, 0); } /* Naranja */
+  100% { background-color: rgb(254, 186, 15); } /* Amarillo oscuro */
+}
+
+.imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: rgb(253, 156, 10);
+  
+}
+
+.imagen img {
+  max-width: 99%; /* Asegura que la imagen no sea más ancha que su contenedor */
+  max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor manteniendo su aspecto */
+  opacity: 0.99; /* Hace que la imagen sea un poco transparente */
+}

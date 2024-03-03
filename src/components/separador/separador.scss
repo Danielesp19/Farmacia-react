@@ -1,0 +1,17 @@
+.separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #202c03, #0c0187); /* Fondo con gradiente */
+  color: white; /* Letra blanca */
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  padding: 20px 0; /* Espacio alrededor del texto */
+  
+}
+
+.separador span {
+  padding: 0 10px; /* Espacio a la izquierda y derecha del texto */
+  font-size: 2em; /* Tamaño de letra más grande */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+

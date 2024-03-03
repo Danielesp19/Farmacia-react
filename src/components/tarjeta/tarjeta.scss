@@ -1,0 +1,53 @@
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3; /* Fondo claro */
+  color: #020743; /* Letra oscura */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  width: 300px; 
+  height: auto; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+.tarjeta h2 {
+  font-size: 24px; 
+  margin-bottom: 10px;
+  color: rgb(2, 25, 118);
+}
+
+.tarjeta .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+}
+
+.tarjeta .texto {
+  font-size: 16px; /* Tamaño fijo para el texto */
+  line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
+}
+
+.tarjeta button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Cambia el color de fondo del botón */
+  color: #fff; /* Cambia el color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor a pointer cuando se pasa el mouse sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.tarjeta button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
+}
+
+
